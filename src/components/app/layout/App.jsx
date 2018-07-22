@@ -4,6 +4,7 @@ import { Container } from "semantic-ui-react";
 import Notifications from "react-notify-toast";
 import NavBar from "../../features/nav/NavBar";
 import HomePage from "../../features/home/HomePage";
+import AboutPage from "../../features/about/About";
 import Dashboard from "../../features/dashboard/Dashboard";
 import QuestionnaireDetail from "../../features/questionnaire/questionnaireDetail/QuestionnaireDetail";
 import QuestionnaireForm from "../../features/questionnaire/QuestionnaireForm";
@@ -31,6 +32,7 @@ class App extends Component {
                   path="/createQuestionnaire"
                   component={QuestionnaireForm}
                 />
+                <Route path="/about" component={AboutPage} />
               </Container>
             </div>
           )}

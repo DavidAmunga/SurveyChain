@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
 import QuestionnaireList from "../questionnaire/QuestionnaireList";
-import sampleData from "../../app/data/sampleData";
+
 import firebase from "../../app/config/firebase";
 
 class Dashboard extends Component {

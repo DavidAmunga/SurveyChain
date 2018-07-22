@@ -102,7 +102,7 @@ class QuestionnaireForm extends Component {
   handleQuestionNameChange = idx => e => {
     const newQuestions = this.state.questions.map((question, qidx) => {
       if (idx !== qidx) return question;
-      return { ...question, name: e.target.value };
+      return { ...question, name: e.target.value,id:idx+1 };
     });
 
     this.setState({
