@@ -11,6 +11,9 @@ contract QuestionnaireFactory {
     function getDeployedQuestionnaires() public view returns (address[]) {
         return deployedQuestionnaires;
     }
+    function getLatestQuestionnaire() public view returns(address){
+        return deployedQuestionnaires[deployedQuestionnaires.length-1];
+    }
 }
 
 contract Questionnaire{
